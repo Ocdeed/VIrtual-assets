@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Virtual Assets</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="login-page">
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="login-header">
+          <a href="index.html" class="logo">
+            <div class="logo-symbol">VA</div>
+            <div class="logo-text">
+              <span>Virtual</span>
+              <span>Assets</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="login-content">
+          <div class="welcome-section">
+            <div class="section-badge">
+              <span class="badge-icon">🔐</span>
+              <span class="badge-text">Welcome Back</span>
+            </div>
+            <h1>
+              Access Your <span class="gradient-text">Digital Portfolio</span>
+            </h1>
+          </div>
+
+          <form class="login-form" id="loginForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-wrapper">
+                <span class="input-icon">📧</span>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">🔒</span>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  aria-label="Toggle password visibility"
+                >
+                  👁️
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" id="remember" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-gradient btn-lg">
+              <span>Sign In</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+
+          <div class="alternative-login">
+            <div class="divider">
+              <span>Or continue with</span>
+            </div>
+            <div class="social-login">
+              <button class="btn btn-outline btn-social">
+                <img src="images/metamask.svg" alt="MetaMask" />
+                <span>MetaMask</span>
+              </button>
+              <button class="btn btn-outline btn-social">
+                <img src="images/wallet-connect.svg" alt="WalletConnect" />
+                <span>WalletConnect</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="signup-prompt">
+            Don't have an account?
+            <a href="signup.html" class="gradient-text">Create Account</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="login-backdrop">
+        <div class="backdrop-image">
+          <div class="stats-overlay">
+            <div class="stat-card">
+              <div class="stat-value">$2.5M+</div>
+              <div class="stat-label">Daily Trading Volume</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">15K+</div>
+              <div class="stat-label">Active Traders</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

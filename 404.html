@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - Virtual Assets</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/error.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="error-page">
+    <div class="error-container">
+      <header>
+        <a href="index.html" class="logo">
+          <div class="logo-symbol">VA</div>
+          <div class="logo-text">
+            <span>Virtual</span>
+            <span>Assets</span>
+          </div>
+        </a>
+      </header>
+
+      <main class="error-content">
+        <div class="glitch-wrapper">
+          <h1 class="glitch" data-text="404">404</h1>
+          <div class="glitch-image"></div>
+        </div>
+
+        <div class="error-message">
+          <h2>Reality Check Failed</h2>
+          <p>Looks like this virtual space doesn't exist... yet.</p>
+        </div>
+
+        <div class="portal-animation">
+          <div class="portal-ring"></div>
+          <div class="portal-sphere"></div>
+        </div>
+
+        <div class="error-actions">
+          <div class="suggestion-grid">
+            <a href="index.html" class="suggestion-card">
+              <span class="card-icon">🏠</span>
+              <span class="card-text">Return Home</span>
+            </a>
+            <a href="#" class="suggestion-card">
+              <span class="card-icon">🔍</span>
+              <span class="card-text">Browse Properties</span>
+            </a>
+            <a href="#" class="suggestion-card">
+              <span class="card-icon">💎</span>
+              <span class="card-text">Featured Listings</span>
+            </a>
+            <a href="#" class="suggestion-card">
+              <span class="card-icon">📞</span>
+              <span class="card-text">Contact Support</span>
+            </a>
+          </div>
+
+          <div class="error-footer">
+            <p>Lost in the metaverse? Try our quick navigation links above.</p>
+            <button class="btn btn-gradient" onclick="window.history.back()">
+              <span class="btn-icon">↩️</span>
+              <span>Go Back</span>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/error.js"></script>
+  </body>
+</html>

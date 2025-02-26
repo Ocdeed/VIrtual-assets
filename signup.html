@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Virtual Assets</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="signup-page">
+    <div class="signup-wrapper">
+      <div class="signup-backdrop">
+        <div class="features-slider">
+          <div class="feature-slide active">
+            <div class="feature-icon">💎</div>
+            <h3>Premium Properties</h3>
+            <p>Access exclusive metaverse real estate opportunities</p>
+          </div>
+          <div class="feature-slide">
+            <div class="feature-icon">📊</div>
+            <h3>Market Analytics</h3>
+            <p>Real-time insights and property value tracking</p>
+          </div>
+          <div class="feature-slide">
+            <div class="feature-icon">🔐</div>
+            <h3>Secure Investments</h3>
+            <p>Enterprise-grade security for your digital assets</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="signup-container">
+        <div class="signup-header">
+          <a href="index.html" class="logo">
+            <div class="logo-symbol">VA</div>
+            <div class="logo-text">
+              <span>Virtual</span>
+              <span>Assets</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="signup-content">
+          <div class="welcome-section">
+            <div class="section-badge">
+              <span class="badge-icon">🚀</span>
+              <span class="badge-text">Join the Revolution</span>
+            </div>
+            <h1>
+              Create Your <span class="gradient-text">Digital Empire</span>
+            </h1>
+            <p class="subtitle">
+              Start your journey in metaverse real estate investment
+            </p>
+          </div>
+
+          <form class="signup-form" id="signupForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <div class="input-wrapper">
+                  <span class="input-icon">👤</span>
+                  <input type="text" id="firstName" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <div class="input-wrapper">
+                  <span class="input-icon">👤</span>
+                  <input type="text" id="lastName" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-wrapper">
+                <span class="input-icon">📧</span>
+                <input type="email" id="email" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" required />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  aria-label="Toggle password visibility"
+                >
+                  👁️
+                </button>
+              </div>
+              <div class="password-strength">
+                <div class="strength-bar"></div>
+                <span class="strength-text">Password strength</span>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="terms-checkbox">
+                <input type="checkbox" id="terms" required />
+                <span
+                  >I agree to the
+                  <a href="#" class="gradient-text">Terms</a> and
+                  <a href="#" class="gradient-text">Privacy Policy</a></span
+                >
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-gradient btn-lg">
+              <span>Create Account</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+
+          <div class="alternative-signup">
+            <div class="divider">
+              <span>Or sign up with</span>
+            </div>
+            <div class="social-signup">
+              <button class="btn btn-outline btn-social">
+                <img src="images/metamask.svg" alt="MetaMask" />
+                <span>MetaMask</span>
+              </button>
+              <button class="btn btn-outline btn-social">
+                <img src="images/wallet-connect.svg" alt="WalletConnect" />
+                <span>WalletConnect</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="login-prompt">
+            Already have an account?
+            <a href="login.html" class="gradient-text">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
